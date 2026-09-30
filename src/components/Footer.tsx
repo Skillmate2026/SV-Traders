@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { MapPin, Building2, Phone, Mail } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 
 export default function Footer() {
   // Explicitly defining paths to avoid routing errors
@@ -76,28 +76,21 @@ export default function Footer() {
               <li className="flex gap-4 items-start">
                 <MapPin size={18} className="text-[#d4af37] mt-0.5 shrink-0" strokeWidth={1.5} />
                 <span className="leading-relaxed">
-                  Shop No. 21, Adi Udupi,<br />Udupi, Karnataka 576103
+                  1373/4, 23rd class, 14 main, A block<br />Sahakarnagar, Bangalore - 92<br />Karnataka, India
                 </span>
               </li>
               
-              <li className="flex gap-4 items-start">
-                <Building2 size={18} className="text-[#d4af37] mt-0.5 shrink-0" strokeWidth={1.5} />
-                <span className="leading-relaxed">
-                  Branches: Bangalore, Madurai, Nasik, Indore
-                </span>
-              </li>
-
               <li className="pt-2">
-                <a href="tel:+919353067700" className="flex items-center gap-4 hover:text-[#d4af37] transition-colors">
+                <a href="tel:+919663239107" className="flex items-center gap-4 hover:text-[#d4af37] transition-colors">
                   <Phone size={18} className="text-[#d4af37]" strokeWidth={1.5} /> 
-                  <span className="tracking-wide">+91 93530 67700</span>
+                  <span className="tracking-wide">+91 96632 39107</span>
                 </a>
               </li>
 
               <li>
-                <a href="mailto:andtraders7700@gmail.com" className="flex items-center gap-4 hover:text-[#d4af37] transition-colors">
+                <a href="mailto:sukruthi.r4@gmail.com" className="flex items-center gap-4 hover:text-[#d4af37] transition-colors">
                   <Mail size={18} className="text-[#d4af37]" strokeWidth={1.5} /> 
-                  andtraders7700@gmail.com
+                  sukruthi.r4@gmail.com
                 </a>
               </li>
 

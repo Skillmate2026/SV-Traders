@@ -7,19 +7,11 @@ import { motion } from 'framer-motion';
 
 const team = [
   {
-    name: "Dhanush Salian",
-    role: "Founder & CEO",
-    image: "/Founder.avif",
-    bio: "Driving the global vision of SV TRADERS. Dhanush is dedicated to bridging the gap between sustainable local agriculture and high-demand international markets, ensuring uncompromising quality at every step.",
-    email: "dhanushsalian333@gmail.com",
-    linkedin: "", // Add the LinkedIn URL here later to make the button visible
-  },
-  {
-    name: "Anand N Kalal", 
-    role: "Founder & Chairman",
-    image: "/Cofounder.jpg",
-    bio: "Overseeing our vast international logistics network. Ensuring that our supply chain remains seamless, efficient, and perfectly compliant with global trade standards from farm to port.",
-    email: "kalalanandsts@gmail.com",
+    name: "Sukruthi Ravindra",
+    role: "Founder",
+    image: "/Founder.jpeg",
+    bio: "Driving the global vision of SV TRADERS. Sukruthi Ravindra is dedicated to bridging the gap between sustainable local agriculture and high-demand international markets, ensuring uncompromising quality at every step.",
+    email: "sukruthi.r4@gmail.com",
     linkedin: "", // Add the LinkedIn URL here later to make the button visible
   }
 ];
@@ -206,19 +198,20 @@ export default function AboutPage() {
                 <span className="h-[1px] w-12 bg-[#d4af37]"></span>
               </motion.div>
               <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#0a2e1f] leading-tight">
-                Meet Our <span className="italic font-light text-[#d4af37]">Founders.</span>
+                Meet Our <span className="italic font-light text-[#d4af37]">Founder.</span>
               </motion.h2>
               <motion.p variants={itemVariants} className="text-sm md:text-base text-neutral-500 font-light max-w-xl mx-auto leading-relaxed">
-                The visionaries dedicated to elevating global agricultural trade through trust, rigorous quality standards, and established grower relationships.
+                The visionary dedicated to elevating global agricultural trade through trust, rigorous quality standards, and established grower relationships.
               </motion.p>
             </motion.div>
 
+            {/* Changed to flex for centering a single item */}
             <motion.div 
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-100px" }}
               variants={containerVariants}
-              className="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24 max-w-5xl mx-auto"
+              className="flex justify-center max-w-5xl mx-auto"
             >
               {team.map((leader, idx) => (
                 <motion.div key={idx} variants={itemVariants} className="group flex flex-col items-center text-center">

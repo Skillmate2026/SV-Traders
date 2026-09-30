@@ -5,19 +5,11 @@ import { Mail } from 'lucide-react';
 
 const team = [
   {
-    name: "Dhanush Salian",
-    role: "Founder & CEO",
-    image: "/Founder.avif",
-    bio: "Driving the global vision of SV TRADERS. Dhanush is dedicated to bridging the gap between sustainable local agriculture and high-demand international markets, ensuring uncompromising quality at every step.",
-    email: "dhanushsalian333@gmail.com",
-    linkedin: "", // Drop the LinkedIn URL here when ready to make the icon visible
-  },
-  {
-    name: "Anand N Kalal", 
-    role: "Founder & Chairman",
-    image: "/Cofounder.jpg",
-    bio: "Overseeing our vast international logistics network. Ensuring that our supply chain remains seamless, efficient, and perfectly compliant with global trade standards from farm to port, ensuring quality at every step.",
-    email: "kalalanandsts@gmail.com",
+    name: "Sukruthi Ravindra",
+    role: "Founder",
+    image: "/Founder.jpeg",
+    bio: "Driving the global vision of SV TRADERS. Sukruthi Ravindra is dedicated to bridging the gap between sustainable local agriculture and high-demand international markets, ensuring uncompromising quality at every step.",
+    email: "sukruthi.r4@gmail.com",
     linkedin: "", // Drop the LinkedIn URL here when ready to make the icon visible
   }
 ];
@@ -63,20 +55,20 @@ export default function TeamSection() {
           </div>
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-[#f9f8f6] leading-tight">
-            Meet Our <span className="italic font-light text-[#d4af37]">Founders</span>
+            Meet Our <span className="italic font-light text-[#d4af37]">Founder</span>
           </h2>
           <p className="text-sm md:text-base text-neutral-400 font-light max-w-xl mx-auto leading-relaxed">
-            The visionaries dedicated to elevating global agricultural trade through trust, rigorous quality standards, and established grower relationships.
+            The visionary dedicated to elevating global agricultural trade through trust, rigorous quality standards, and established grower relationships.
           </p>
         </motion.div>
 
-        {/* Team Grid */}
+        {/* Team Container - Changed from grid to flex for single item centering */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-12 lg:gap-24 max-w-5xl mx-auto"
+          className="flex justify-center max-w-5xl mx-auto"
         >
           {team.map((leader, idx) => (
             <motion.div key={idx} variants={cardVariants} className="group flex flex-col items-center text-center">

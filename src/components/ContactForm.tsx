@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Building2 } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 import LeadForm from './LeadForm'; // Ensure this matches your path
 
 export default function ContactForm() {
@@ -51,7 +51,6 @@ export default function ContactForm() {
 
             {/* Imported Reusable Form */}
             <motion.div variants={itemVariants}>
-              {/* Note: You may want to update the inputs inside LeadForm.tsx to have sharp corners (rounded-sm) and match the dark theme! */}
               <LeadForm />
             </motion.div>
             
@@ -65,49 +64,50 @@ export default function ContactForm() {
             variants={containerVariants}
             className="space-y-8 flex flex-col"
           >
-            {/* Contact Details - Premium Glassmorphic Grid */}
-            <motion.div variants={itemVariants} className="grid grid-cols-1 sm:grid-cols-2 gap-8 bg-white/5 backdrop-blur-md p-10 rounded-sm border border-white/10">
+            {/* Contact Details - Redesigned for perfect balance */}
+            <motion.div variants={itemVariants} className="flex flex-col bg-white/5 backdrop-blur-md p-8 sm:p-10 rounded-sm border border-white/10">
               
               {/* Head Office */}
-              <div className="flex flex-col items-start gap-4">
-                <div className="text-[#d4af37]"><MapPin strokeWidth={1.5} size={28} /></div>
+              <div className="flex items-start gap-6">
+                <div className="text-[#d4af37] mt-1 bg-[#d4af37]/10 p-3 rounded-full shrink-0">
+                  <MapPin strokeWidth={1.5} size={24} />
+                </div>
                 <div>
                   <h4 className="text-[#f9f8f6] font-serif text-xl mb-2">Head Office</h4>
                   <p className="text-white/60 text-sm leading-relaxed font-light">
-                    Shop No. 21<br />
-                    Adi Udupi, Udupi - 576103<br />
+                    1373/4, 23rd class, 14 main, A block<br />
+                    Sahakarnagar, Bangalore - 92<br />
                     Karnataka, India
                   </p>
                 </div>
               </div>
 
-              {/* Branches */}
-              <div className="flex flex-col items-start gap-4">
-                <div className="text-[#d4af37]"><Building2 strokeWidth={1.5} size={28} /></div>
-                <div>
-                  <h4 className="text-[#f9f8f6] font-serif text-xl mb-2">Our Branches</h4>
-                  <p className="text-white/60 text-sm leading-relaxed font-light">
-                    Udupi, Bangalore, Madurai, Nasik, Indore
-                  </p>
-                </div>
-              </div>
+              {/* Divider */}
+              <div className="w-full h-[1px] bg-white/10 my-8"></div>
 
               {/* Phone */}
-              <div className="flex flex-col items-start gap-4 mt-4 sm:mt-0">
-                <div className="text-[#d4af37]"><Phone strokeWidth={1.5} size={28} /></div>
+              <div className="flex items-start gap-6">
+                <div className="text-[#d4af37] mt-1 bg-[#d4af37]/10 p-3 rounded-full shrink-0">
+                  <Phone strokeWidth={1.5} size={24} />
+                </div>
                 <div>
                   <h4 className="text-[#f9f8f6] font-serif text-xl mb-2">Direct Line</h4>
-                  <p className="text-white/60 text-sm font-light tracking-wide">+91 93530 67700</p>
+                  <p className="text-white/60 text-sm font-light tracking-wide">+91 96632 39107</p>
                 </div>
               </div>
 
+              {/* Divider */}
+              <div className="w-full h-[1px] bg-white/10 my-8"></div>
+
               {/* Email */}
-              <div className="flex flex-col items-start gap-4 mt-4 sm:mt-0">
-                <div className="text-[#d4af37]"><Mail strokeWidth={1.5} size={28} /></div>
+              <div className="flex items-start gap-6">
+                <div className="text-[#d4af37] mt-1 bg-[#d4af37]/10 p-3 rounded-full shrink-0">
+                  <Mail strokeWidth={1.5} size={24} />
+                </div>
                 <div>
                   <h4 className="text-[#f9f8f6] font-serif text-xl mb-2">Email Desk</h4>
                   <p className="text-white/60 text-sm font-light break-all hover:text-[#d4af37] transition-colors cursor-pointer">
-                    andtraders7700@gmail.com
+                    sukruthi.r4@gmail.com
                   </p>
                 </div>
               </div>
@@ -118,7 +118,7 @@ export default function ContactForm() {
             <motion.div variants={itemVariants} className="w-full h-[350px] rounded-sm overflow-hidden border border-white/10 relative group">
               <div className="absolute inset-0 bg-[#0a2e1f]/20 group-hover:bg-transparent transition-colors duration-700 pointer-events-none z-10" />
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3881.564755866187!2d74.730248!3d13.344445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbca4a6566cbced%3A0x8e826b0f92b70f0!2sAdi%20Udupi%2C%20Udupi%2C%20Karnataka%20576103!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin" 
+                src="https://maps.google.com/maps?q=Sahakarnagar,%20Bangalore&t=&z=13&ie=UTF8&iwloc=&output=embed"
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 

@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -42,14 +41,6 @@ export default function Navbar() {
           
           {/* Logo Section */}
           <Link href="/" className="flex-shrink-0 flex items-center gap-4 group">
-            <div className="relative w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]">
-              <Image 
-                src="/logo.png" 
-                alt="SV TRADERS Logo" 
-                fill
-                className="object-contain"
-              />
-            </div>
             <div className="flex flex-col justify-center">
               <span className={`text-2xl sm:text-3xl font-serif tracking-wider leading-none transition-colors duration-300 ${isScrolled ? "text-[#0a2e1f]" : "text-white"}`}>
                 SV TRADERS

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import LeadForm from '@/components/LeadForm';
-import { MapPin, Phone, Mail, Building2 } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function ContactPage() {
@@ -65,7 +65,7 @@ export default function ContactPage() {
             whileInView="visible"
             viewport={{ once: true, margin: "100px" }}
             variants={containerVariants}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+            className="grid grid-cols-1 md:grid-cols-3 gap-6"
           >
             
             {/* Head Office */}
@@ -74,37 +74,28 @@ export default function ContactPage() {
                 <MapPin size={32} strokeWidth={1.5} />
               </div>
               <h3 className="font-serif text-[#0a2e1f] text-xl mb-3">Head Office</h3>
-              <p className="text-neutral-500 text-sm font-light leading-relaxed">Shop No. 21, Adi Udupi,<br />Udupi - 576103, Karnataka</p>
-            </motion.div>
-
-            {/* Branches */}
-            <motion.div variants={itemVariants} className="bg-white p-10 rounded-sm shadow-xl border border-neutral-100 flex flex-col items-center text-center group hover:border-[#d4af37]/50 transition-all duration-500">
-              <div className="mb-6 text-[#0a2e1f] group-hover:-translate-y-2 group-hover:text-[#d4af37] transition-all duration-500">
-                <Building2 size={32} strokeWidth={1.5} />
-              </div>
-              <h3 className="font-serif text-[#0a2e1f] text-xl mb-3">Our Branches</h3>
-              <p className="text-neutral-500 text-sm font-light leading-relaxed">Udupi, Bangalore, Madurai, Nasik, Indore</p>
+              <p className="text-neutral-500 text-sm font-light leading-relaxed">1373/4, 23rd class, 14 main, A block<br />Sahakarnagar, Bangalore - 92</p>
             </motion.div>
 
             {/* Phone (Clickable) */}
             <motion.div variants={itemVariants}>
-              <Link href="tel:+919353067700" className="bg-white p-10 rounded-sm shadow-xl border border-neutral-100 flex flex-col items-center text-center group hover:border-[#d4af37]/50 transition-all duration-500 cursor-pointer h-full">
+              <Link href="tel:+919663239107" className="bg-white p-10 rounded-sm shadow-xl border border-neutral-100 flex flex-col items-center text-center group hover:border-[#d4af37]/50 transition-all duration-500 cursor-pointer h-full">
                 <div className="mb-6 text-[#0a2e1f] group-hover:-translate-y-2 group-hover:text-[#d4af37] transition-all duration-500">
                   <Phone size={32} strokeWidth={1.5} />
                 </div>
                 <h3 className="font-serif text-[#0a2e1f] text-xl mb-3">Direct Line</h3>
-                <p className="text-[#d4af37] font-medium tracking-widest text-xs uppercase mt-2">+91 93530 67700</p>
+                <p className="text-[#d4af37] font-medium tracking-widest text-xs uppercase mt-2">+91 96632 39107</p>
               </Link>
             </motion.div>
 
-            {/* Email (Clickable) - Removed uppercase, changed tracking/size for readability */}
+            {/* Email (Clickable) */}
             <motion.div variants={itemVariants}>
-              <Link href="mailto:andtraders7700@gmail.com" className="bg-white p-10 rounded-sm shadow-xl border border-neutral-100 flex flex-col items-center text-center group hover:border-[#d4af37]/50 transition-all duration-500 cursor-pointer h-full">
+              <Link href="mailto:sukruthi.r4@gmail.com" className="bg-white p-10 rounded-sm shadow-xl border border-neutral-100 flex flex-col items-center text-center group hover:border-[#d4af37]/50 transition-all duration-500 cursor-pointer h-full">
                 <div className="mb-6 text-[#0a2e1f] group-hover:-translate-y-2 group-hover:text-[#d4af37] transition-all duration-500">
                   <Mail size={32} strokeWidth={1.5} />
                 </div>
                 <h3 className="font-serif text-[#0a2e1f] text-xl mb-3">Email Desk</h3>
-                <p className="text-[#d4af37] font-medium tracking-wide text-sm mt-2 break-all">andtraders7700<br/>@gmail.com</p>
+                <p className="text-[#d4af37] font-medium tracking-wide text-sm mt-2 break-all">sukruthi.r4<br/>@gmail.com</p>
               </Link>
             </motion.div>
 
@@ -125,7 +116,7 @@ export default function ContactPage() {
             <div className="h-[500px] lg:h-auto w-full relative group">
               <div className="absolute inset-0 bg-[#0a2e1f]/20 pointer-events-none z-10 mix-blend-overlay transition-colors duration-700 group-hover:bg-transparent" />
               <iframe 
-                src="https://maps.google.com/maps?q=Shop%20no%2021,%20Adi%20Udupi,%20Udupi%20576103&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                src="https://maps.google.com/maps?q=Sahakarnagar,%20Bangalore&t=&z=13&ie=UTF8&iwloc=&output=embed" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
