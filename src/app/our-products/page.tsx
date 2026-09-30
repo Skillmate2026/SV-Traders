@@ -3,14 +3,38 @@ import React from 'react';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Tag } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const products = [
-  { id: "onion", name: "Export-Grade Onions", desc: "Premium red and pink onions sourced directly from the finest farms, sorted for consistent size and extended shelf life.", img: "/about2.png" },
-  { id: "potato", name: "Farm-Fresh Potatoes", desc: "High-yield, disease-free potatoes perfect for consumption and industrial processing, available in bulk quantities.", img: "/hero2.png" }, 
-  { id: "garlic", name: "Premium Garlic", desc: "Pungent, fully matured white garlic bulbs with tight skins, graded meticulously for international markets.", img: "/Garlic.avif" },
-  { id: "coconut", name: "High-Yield Coconuts", desc: "Fresh, semi-husked coconuts rich in water and meat, handpicked from the coastal belts for maximum freshness.", img: "/Coconut.jpeg" } 
+  { 
+    id: "onion", 
+    name: "Export-Grade Onions", 
+    desc: "Premium red and pink onions sourced directly from the finest farms, sorted for consistent size and extended shelf life.", 
+    img: "/about2.png",
+    rate: "45-50 /kg"
+  },
+  { 
+    id: "potato", 
+    name: "Farm-Fresh Potatoes", 
+    desc: "High-yield, disease-free potatoes perfect for consumption and industrial processing, available in bulk quantities.", 
+    img: "/hero2.png",
+    rate: "15-17 /kg"
+  }, 
+  { 
+    id: "garlic", 
+    name: "Premium Garlic", 
+    desc: "Pungent, fully matured white garlic bulbs with tight skins, graded meticulously for international markets.", 
+    img: "/Garlic.avif",
+    rate: "170-200 /kg"
+  },
+  { 
+    id: "coconut", 
+    name: "High-Yield Coconuts", 
+    desc: "Fresh, semi-husked coconuts rich in water and meat, handpicked from the coastal belts for maximum freshness.", 
+    img: "/Coconut.jpeg",
+    rate: "25-30 /kg"
+  } 
 ];
 
 export default function ProductsPage() {
@@ -78,7 +102,6 @@ export default function ProductsPage() {
               {products.map((product) => (
                 <motion.div key={product.id} variants={itemVariants}>
                   <Link 
-                    /* --- UPDATED LINK HERE --- */
                     href={`/our-products/${product.id}`}
                     className="group relative block rounded-sm overflow-hidden h-[450px] lg:h-[550px] shadow-sm hover:shadow-xl transition-shadow duration-500 bg-[#0a2e1f]"
                   >
@@ -98,11 +121,18 @@ export default function ProductsPage() {
 
                     {/* Card Content */}
                     <div className="relative z-20 h-full flex flex-col justify-end p-8 lg:p-12">
-                      <h2 className="text-3xl lg:text-4xl font-serif text-[#f9f8f6] mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                      <h2 className="text-3xl lg:text-4xl font-serif text-[#f9f8f6] mb-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                         {product.name}
                       </h2>
                       
-                      <p className="text-sm lg:text-base text-white/80 font-light leading-relaxed mb-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
+                      {/* Rate Tag added here */}
+                      <div className="mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
+                        <span className="inline-flex items-center gap-1.5 bg-[#d4af37]/20 border border-[#d4af37]/50 text-[#d4af37] px-3 py-1 text-xs font-semibold uppercase tracking-widest rounded-sm backdrop-blur-sm">
+                          <Tag size={12} /> Rate: {product.rate}
+                        </span>
+                      </div>
+                      
+                      <p className="text-sm lg:text-base text-white/80 font-light leading-relaxed mb-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
                         {product.desc}
                       </p>
                       
