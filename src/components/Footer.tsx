@@ -101,7 +101,7 @@ export default function Footer() {
         {/* Copyright Bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/40 text-xs font-light tracking-wide">
-            © {new Date().getFullYear()} SV TRADERS International. All rights reserved.
+            © {new Date().getFullYear()} SV TRADERS International. Made with ❤️ by Skillmate
           </p>
           <div className="flex gap-8 text-xs font-light tracking-wide">
             <Link href="#" className="text-white/40 hover:text-[#d4af37] transition-colors">Privacy Policy</Link>
