@@ -10,7 +10,7 @@ const team = [
     name: "Dhanush Salian",
     role: "Founder & CEO",
     image: "/Founder.avif",
-    bio: "Driving the global vision of AND Traders. Dhanush is dedicated to bridging the gap between sustainable local agriculture and high-demand international markets, ensuring uncompromising quality at every step.",
+    bio: "Driving the global vision of SV TRADERS. Dhanush is dedicated to bridging the gap between sustainable local agriculture and high-demand international markets, ensuring uncompromising quality at every step.",
     email: "dhanushsalian333@gmail.com",
     linkedin: "", // Add the LinkedIn URL here later to make the button visible
   },
@@ -70,7 +70,7 @@ export default function AboutPage() {
             </motion.div>
 
             <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl lg:text-8xl font-serif text-[#f9f8f6] tracking-tight leading-tight">
-              About <span className="italic font-light text-[#d4af37]">AND Traders</span>
+              About <span className="italic font-light text-[#d4af37]">SV TRADERS</span>
             </motion.h1>
 
             <motion.p variants={itemVariants} className="mt-8 max-w-2xl mx-auto text-lg md:text-xl text-white/70 font-light leading-relaxed">
@@ -101,7 +101,7 @@ export default function AboutPage() {
                 
                 <motion.div variants={itemVariants} className="space-y-6 text-neutral-600 font-light leading-relaxed text-lg">
                   <p>
-                    AND Traders began with a simple but powerful idea: to ensure that the hard work of local farmers reaches global markets without compromising on quality or fairness. Based in Udupi with a network stretching across India, we have built a supply chain that prioritizes freshness, compliance, and reliability.
+                    SV TRADERS began with a simple but powerful idea: to ensure that the hard work of local farmers reaches global markets without compromising on quality or fairness. Based in Udupi with a network stretching across India, we have built a supply chain that prioritizes freshness, compliance, and reliability.
                   </p>
                   <p>
                     Our expertise lies in sourcing premium onions, garlic, potatoes, and coconuts directly from the growers. By eliminating unnecessary middlemen, we not only ensure better returns for farmers but also guarantee competitive pricing and unmatched quality for our international buyers.
@@ -161,7 +161,7 @@ export default function AboutPage() {
             >
               <motion.div variants={itemVariants} className="flex items-center justify-center gap-4">
                 <span className="h-[1px] w-12 bg-[#d4af37]"></span>
-                <span className="text-[#d4af37] font-semibold tracking-[0.25em] uppercase text-xs">The AND Traders Difference</span>
+                <span className="text-[#d4af37] font-semibold tracking-[0.25em] uppercase text-xs">The SV TRADERS Difference</span>
                 <span className="h-[1px] w-12 bg-[#d4af37]"></span>
               </motion.div>
               <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight">

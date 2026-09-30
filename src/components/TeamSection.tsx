@@ -8,7 +8,7 @@ const team = [
     name: "Dhanush Salian",
     role: "Founder & CEO",
     image: "/Founder.avif",
-    bio: "Driving the global vision of AND Traders. Dhanush is dedicated to bridging the gap between sustainable local agriculture and high-demand international markets, ensuring uncompromising quality at every step.",
+    bio: "Driving the global vision of SV TRADERS. Dhanush is dedicated to bridging the gap between sustainable local agriculture and high-demand international markets, ensuring uncompromising quality at every step.",
     email: "dhanushsalian333@gmail.com",
     linkedin: "", // Drop the LinkedIn URL here when ready to make the icon visible
   },

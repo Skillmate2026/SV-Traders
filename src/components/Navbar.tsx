@@ -45,14 +45,14 @@ export default function Navbar() {
             <div className="relative w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]">
               <Image 
                 src="/logo.png" 
-                alt="AND Traders Logo" 
+                alt="SV TRADERS Logo" 
                 fill
                 className="object-contain"
               />
             </div>
             <div className="flex flex-col justify-center">
               <span className={`text-2xl sm:text-3xl font-serif tracking-wider leading-none transition-colors duration-300 ${isScrolled ? "text-[#0a2e1f]" : "text-white"}`}>
-                AND TRADERS
+                SV TRADERS
               </span>
               <span className={`text-[9px] sm:text-[11px] font-medium tracking-[0.2em] mt-1 uppercase hidden sm:block transition-colors duration-300 ${isScrolled ? "text-[#d4af37]" : "text-white/80"}`}>
                 Agriculture | Supply | Production

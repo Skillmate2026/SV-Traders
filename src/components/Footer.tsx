@@ -19,7 +19,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="space-y-6">
             <span className="text-3xl font-serif text-[#f9f8f6] tracking-wider block">
-              AND TRADERS
+              SV TRADERS
             </span>
             <p className="text-white/50 text-sm leading-relaxed pr-4 font-light">
               Connecting farmers and growing together. Your trusted, established partner for high-quality global agricultural exports and supply chain logistics.
@@ -108,7 +108,7 @@ export default function Footer() {
         {/* Copyright Bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/40 text-xs font-light tracking-wide">
-            © {new Date().getFullYear()} AND Traders International. All rights reserved.
+            © {new Date().getFullYear()} SV TRADERS International. All rights reserved.
           </p>
           <div className="flex gap-8 text-xs font-light tracking-wide">
             <Link href="#" className="text-white/40 hover:text-[#d4af37] transition-colors">Privacy Policy</Link>

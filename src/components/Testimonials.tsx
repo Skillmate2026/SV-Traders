@@ -7,7 +7,7 @@ const testimonials = [
   {
     name: "Rajesh Sharma",
     role: "Procurement Director, Dubai",
-    content: "AND Traders has been our most reliable partner for premium onions and garlic. Their grading standards are impeccable, and shipments always arrive on schedule.",
+    content: "SV TRADERS has been our most reliable partner for premium onions and garlic. Their grading standards are impeccable, and shipments always arrive on schedule.",
     rating: 5,
   },
   {
@@ -19,7 +19,7 @@ const testimonials = [
   {
     name: "Mohammed Al-Fayed",
     role: "Supermarket Chain Owner, UAE",
-    content: "We source our high-yield coconuts exclusively from AND Traders. Their direct-to-farm network ensures we get the freshest produce at highly competitive rates.",
+    content: "We source our high-yield coconuts exclusively from SV TRADERS. Their direct-to-farm network ensures we get the freshest produce at highly competitive rates.",
     rating: 5,
   }
 ];

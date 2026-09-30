@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "AND Traders | Premium Global Agro Exports",
+  title: "SV TRADERS | Premium Global Agro Exports",
   description: "Connecting farmers, growing together. Exporting high-quality onions, potatoes, coconuts, and garlic.",
 };
 

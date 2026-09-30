@@ -48,7 +48,7 @@ export default function PremiumAboutSection() {
             <div className="space-y-6">
               <motion.span variants={itemVariants} className="text-[#d4af37] font-semibold tracking-[0.25em] uppercase text-xs flex items-center gap-4">
                 <span className="w-16 h-[1px] bg-[#d4af37]"></span>
-                The AND Traders Standard
+                The SV TRADERS Standard
               </motion.span>
               
               {/* Added font-serif to the heading for a high-end editorial feel */}
@@ -58,7 +58,7 @@ export default function PremiumAboutSection() {
               </motion.h2>
               
               <motion.p variants={itemVariants} className="text-lg text-neutral-600 leading-relaxed font-light max-w-lg">
-                AND Traders is a premier export-import enterprise dedicated to bridging the gap between fertile farms and international markets. We specialize in sourcing, grading, and exporting high-grade agricultural commodities, ensuring that every shipment meets stringent global standards.
+                SV TRADERS is a premier export-import enterprise dedicated to bridging the gap between fertile farms and international markets. We specialize in sourcing, grading, and exporting high-grade agricultural commodities, ensuring that every shipment meets stringent global standards.
               </motion.p>
             </div>
 
