@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Navbar from '../../../components/Navbar'; // Adjust paths based on your folder structure
 import Footer from '../../../components/Footer';
-import { Package, Scale, MapPin, Calendar, ArrowRight, ArrowLeft, ShieldCheck } from 'lucide-react';
+import { Package, Scale, MapPin, Calendar, ArrowRight, ArrowLeft, ShieldCheck, Tag } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 // Centralized Data
@@ -15,6 +15,7 @@ const productData: Record<string, any> = {
     desc: "Sourced from the most fertile regions, our onions are known for their pungent aroma, uniform size, and crisp texture. Rigorously sorted to remove defects, ensuring high shelf-life for long-distance sea freight.",
     img: "/about2.png", 
     specs: [
+      { icon: <Tag size={24} strokeWidth={1.5} />, title: "Current Rate", val: "₹45 - ₹50" },
       { icon: <Scale size={24} strokeWidth={1.5} />, title: "Size & Grading", val: "40mm to 60mm+" },
       { icon: <Package size={24} strokeWidth={1.5} />, title: "Packaging", val: "5kg - 50kg Mesh/Jute Bags" },
       { icon: <MapPin size={24} strokeWidth={1.5} />, title: "Origin", val: "Maharashtra / Karnataka, India" },
@@ -27,6 +28,7 @@ const productData: Record<string, any> = {
     desc: "Our potatoes are harvested at peak maturity, offering excellent texture and taste. Available in multiple varieties suitable for direct consumption or industrial processing (chips/fries).",
     img: "/hero2.png", 
     specs: [
+      { icon: <Tag size={24} strokeWidth={1.5} />, title: "Current Rate", val: "₹15 - ₹17" },
       { icon: <Scale size={24} strokeWidth={1.5} />, title: "Size & Grading", val: "50g to 150g+" },
       { icon: <Package size={24} strokeWidth={1.5} />, title: "Packaging", val: "10kg - 50kg Mesh Bags" },
       { icon: <MapPin size={24} strokeWidth={1.5} />, title: "Origin", val: "Gujarat / UP, India" },
@@ -39,6 +41,7 @@ const productData: Record<string, any> = {
     desc: "Matured white garlic with tight, unbroken skins and a strong, spicy flavor profile. Carefully cured and dried to prevent sprouting during international transit.",
     img: "/Garlic.avif",
     specs: [
+      { icon: <Tag size={24} strokeWidth={1.5} />, title: "Current Rate", val: "₹170 - ₹200" },
       { icon: <Scale size={24} strokeWidth={1.5} />, title: "Size & Grading", val: "40mm to 55mm+" },
       { icon: <Package size={24} strokeWidth={1.5} />, title: "Packaging", val: "10kg Carton / 20kg Mesh Bags" },
       { icon: <MapPin size={24} strokeWidth={1.5} />, title: "Origin", val: "Madhya Pradesh / Rajasthan, India" },
@@ -51,6 +54,7 @@ const productData: Record<string, any> = {
     desc: "Plucked from premium coastal belts, our semi-husked coconuts are heavy, water-filled, and feature thick, sweet meat. Perfect for culinary and industrial coconut derivatives.",
     img: "/Coconut.jpeg", 
     specs: [
+      { icon: <Tag size={24} strokeWidth={1.5} />, title: "Current Rate", val: "₹25 - ₹30" },
       { icon: <Scale size={24} strokeWidth={1.5} />, title: "Weight", val: "500g to 700g+ per piece" },
       { icon: <Package size={24} strokeWidth={1.5} />, title: "Packaging", val: "25 Pcs per PP Bag" },
       { icon: <MapPin size={24} strokeWidth={1.5} />, title: "Origin", val: "Tamil Nadu / Karnataka, India" },
